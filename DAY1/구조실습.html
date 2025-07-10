@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <title>구조실습</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            background-color: pink;
+            padding: 16px 32px;
+            align-items: center;
+
+        }
+        .header_menu {
+            display: flex;
+            list-style: none;
+        }
+        .header_menu li {
+            margin: 16px;
+        }
+        .header_menu a {
+            color: rgb(157, 10, 198);
+            text-decoration: none;
+            padding: 16px;
+            background-color: #fff;
+            border-radius: 8px;
+        }
+        .news_article {
+            border: 1px solid #000;
+            margin: 16px;
+            padding: 8px;
+        }
+        main {
+            display: flex;
+
+        }
+        .content_section {
+            width: 70%;
+        }
+        .aside {
+            width: 30%;
+        }
+        footer {
+            height: 200px;
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>LOGO</h1>
+        <nav>
+            <ul class="header_menu">
+            <li><a href="#">메뉴1</a></li>
+            <li><a href="#">메뉴2</a></li>
+            <li><a href="#">메뉴3</a></li>
+        </ul>
+        </nav>
+        
+    </header>
+    
+    <main class="main">
+        <section class="content_section">
+            <article class="news_article">
+                <h2>옆집에 고양이가 침입했다.</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, pariatur 
+                quam voluptas quasi soluta vel perferendis ratione quis quaerat aspernatur maiores</p>
+                
+            </article>
+            <article class="news_article">
+                <h2>바다에서 쉬고 있는 점박이물범!</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, pariatur 
+                quam voluptas quasi soluta vel perferendis ratione quis quaerat aspernatur maiores</p>
+                
+            </article>
+            <article class="news_article">
+                <h2>건강을 지키는 생활습관 10가지</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, pariatur 
+                quam voluptas quasi soluta vel perferendis ratione quis quaerat aspernatur maiores</p>
+                
+            </article>
+            <article class="news_article">
+                <h2>아이돌커플탄생?!</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, pariatur 
+                quam voluptas quasi soluta vel perferendis ratione quis quaerat aspernatur maiores</p>
+                
+            </article>
+            <article class="news_article">
+                <h2>종합영양제 과연 효과있을까?</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, pariatur 
+                quam voluptas quasi soluta vel perferendis ratione quis quaerat aspernatur maiores</p>
+                
+            </article>
+            <article class="news_article">
+                <h2>월요일 직장인 피로도 99%라는 연구결과</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, pariatur 
+                quam voluptas quasi soluta vel perferendis ratione quis quaerat aspernatur maiores</p>
+                
+            </article>
+        </section>
+   
+
+        <aside class="aside">
+            <h2>Right Aside</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, pariatur 
+                quam voluptas quasi soluta vel perferendis ratione quis quaerat aspernatur maiores 
+                nemo autem labore voluptate culpa! Expedita maiores atque at!</p>
+            <div class="user_form">
+                <input type="text">
+                 <button type="submit">제출</button>
+            </div>
+                
+         
+            <div>
+                <h2>광고</h2>
+            </div>
+            <p>광고내용</p>
+        </aside>
+    
+     </main>
+
+    <footer class="footer">
+
+    </footer>
+</body>
+</html>
