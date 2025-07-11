@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <title>퍼센테이지</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: bisque
+        }
+        section {
+            display: flex;
+            flex-direction: column;
+            position: relative;           
+        }
+        .percentage_1,
+        .percentage_2,
+        .percentage_3,
+        .percentage_4,
+        .percentage_5 {
+            width: 2200px;
+            height: 36px;
+            border: 1px solid #efaf96;
+            background-color: bisque;
+            padding: 0 10px;
+            line-height: 36px;
+            margin-bottom: 10px;
+            transition: 0.4s;
+        }
+      
+        .percentage_1:hover {
+            background-color: orange;
+            width: 20%;
+        }
+        .percentage_2:hover {
+            background-color: orange;
+            width: 40%;
+        }
+        .percentage_3:hover {
+            background-color: orange;
+            width: 60%;
+        }
+        .percentage_4:hover {
+            background-color: orange;
+            width: 80%;
+        }
+        .percentage_5:hover {
+            background-color: orange;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>웹부터 포트폴리오까지~</h1>
+    <section>
+        <article class="percentage_1">
+            <h2 class="progress_1">20%</h2>
+        </article>
+        <article class="percentage_2">
+            <h2>40%</h2>
+        </article>
+        <article class="percentage_3">
+            <h2>60%</h2>
+        </article>
+        <article class="percentage_4">
+            <h2>80%</h2>
+        </article>
+        <article class="percentage_5">
+            <h2>100%</h2>
+        </article>
+    </section>
+</body>
+</html>
