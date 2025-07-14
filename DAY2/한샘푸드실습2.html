@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한샘푸드실습2</title>
+    <script src="https://kit.fontawesome.com/26136d9ff7.js" crossorigin="anonymous"></script>
+    <style>
+        @font-face {
+    font-family: 'NanumSquareNeoLight';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.ttf) format("truetype");
+}
+@font-face {
+    font-family: 'NanumSquareNeo';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.ttf) format("truetype");
+}
+@font-face {
+    font-family: 'NanumSquareNeoExtraBold';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.ttf) format("truetype");
+}
+        nav {
+
+            display: flex;
+            width: 1824px;
+            height: 80px;
+            margin: 0 170px;
+            align-items: center;
+            display: sticky;
+        }
+        .logo {
+            font-size: 28px;
+            font-family: 'NanumSquareNeo';
+        }
+        ul {
+            display: flex;
+            list-style: none;
+        }
+        li {
+            padding-right: 50px;
+            font-size: 18px;
+            font-family: 'NanumSquareNeo';
+        }
+        div {
+            margin-right: 10px;
+            display: flex;
+            gap: 20px;
+        }
+        .button_1 {
+            border: 1px solid #F8e6c3;
+            color: #000;
+            background-color: #F8e6c3;
+            border-radius: 35px;
+            border-width: 15px;
+            font-size: 18px;
+        }
+        .button_2 {
+            border: 1px solid #08483c;
+            color: #fff;
+            background-color: #08483c;
+            border-width: 17px;
+            border-radius: 35px;
+            font-size: 18px;
+
+        }
+        .h1 {
+            font-size: 32px;
+        }
+        main .img_bg {
+            background: url(bom_img.png);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            width: 1824px;
+            height: 640px;
+            border-radius: 10%;
+            z-index: 1;
+            position: relative;
+        
+        }
+        .text_box {
+            position: absolute;
+            z-index: 2;
+            top: 450px;
+            left: 1000px;
+        }
+        .s_logo {
+            position: absolute;
+            z-index: 3;
+            top: 490px;
+            left: 1190px;
+        }
+        p {
+            position: absolute;
+            z-index: 3;
+            top: 570px;
+            left: 1120px;
+            font-size: 20px;
+        }
+        .button_3 {
+            position: absolute;
+            z-index: 3;
+            width: 150px;
+            height: 35px;
+            border-radius: 45px;
+            top: 700px;
+            left: 1240px;
+            background-color: #4c2a00;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1 class="logo">
+            <img src="logo.svg" alt=""></a></h1>
+        <ul class="menu">
+            <li>한샘푸드</li>
+            <li>운영관리</li>
+            <li>사업영역</li>
+            <li>공지사항</li>
+            <li>한샘스토리</li>
+        </ul>
+       
+        <div>
+            <button class="button_1">결제하기</button>
+            <button class="button_2">온라인문의</button>
+        </div>
+    </nav>
+    <main>
+        <section class="img_bg">
+             <img src="bom_img.png" alt="너와봄 백그라운드 이미지">
+        
+            
+            <figure>
+                <div class="text_box">
+                <img src="bom_txt_bg.png" alt="텍스트박스 이미지">
+                </figure>
+                <figure class="s_logo">
+                <img src="bom_logo.svg" alt="너와봄 로고">
+                </figure>
+                <p>
+               <br>
+                너와봄은 우렁쌈밥 전문점으로,
+               <br>
+                10여가지 신선한 쌈 채소와 다양한 반찬을 제공하여
+               <br>
+                건강하고 맛있는 한끼를 제공합니다. 
+
+               </p>
+                <button class="button_3">자세히보기</button>
+            </div>
+        </section>
+
+        
+    </main>
+</body>
+</html>
