@@ -7,18 +7,10 @@
     <style>
         
         .image_container {
-            position: relative;
-            margin-left: 0;
-            padding-left: 0;
-            width: 1158px;
-            /*animation-name: moveBox;
-            animation-duration: 7s;
-            animation-iteration-count: 1;
-            animation-fill-mode: forwards;
-            animation-timing-function: linear;
-            animation-direction: normal;*/
-           
-
+            position: relative;           
+        }
+        .image_container .logo_img {
+            position: absolute;
         }
  
         div .logo_img {
@@ -33,6 +25,8 @@
             top: 150px;
             left: 0;
             z-index: 1;
+            left: -300px;
+            transition: 0.7s;
             
         }
         
@@ -41,13 +35,8 @@
             transform: translateY(650px);         
         }
         
-        @keyframes moveBackgroundImage {
-            from {
-                background-position: -1158px;
-            }
-            to {
-                background-position: 0 0;
-            }
+        div .bg_img:hover {
+            left: 0;
         }
         
     </style>
