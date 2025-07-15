@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            animation-name: boxAnimation2;
+            animation-duration: 5s;
+            animation-delay: 1s;/*브라우저 열리고나서 대기시간*/
+            animation-iteration-count: 1;/*애니메이션 반복 횟수, 계속반복은 infinite*/
+            animation-direction: normal;/*기본이 normal*/
+            animation-fill-mode: forwards;/*애니메이션이 끝나도 유지하는건  forwards*/
+            animation-timing-function: linear;/*다양한 값 넣을 수 있다*/
+
+            /*animation: name이름  duration지속시간  timing-function타이밍함수 delay대기시간 interactio-count반복횟수
+            direction방향 fill-mode전후상태 play-state재생/정지;--한꺼번에 작성 가능*/
+            
+        }
+        .box:nth-child(1) {
+            background: rgba(255, 99, 99);
+            animation-timing-function: linear;
+        }
+         .box:nth-child(1):hover {
+            animation-play-state: paused;/*애니메이션 우이ㅔ 커서가면 멈춤*/
+         }
+        .box:nth-child(2) {
+            background: rgb(34, 149, 181);
+            animation-timing-function: ease;
+        }
+        .box:nth-child(3) {
+            background: rgb(99, 255, 206);
+            animation-timing-function: ease-in;
+        }
+        .box:nth-child(4) {
+            background: rgb(117, 255, 99);
+            animation-timing-function: ease-out;
+        }
+        .box:nth-child(5) {
+            background: rgb(117, 99, 255);
+            animation-timing-function: ease-in-out;
+        }
+        .box:nth-child(6) {
+            background: rgb(255, 99, 219);
+        }
+
+        @keyframes boxAnimation {
+            from {
+                width: 200px;
+            }
+            to {
+                width: 500px;
+            }
+        }/*시작과 끝이 같아 간단한 에니메이션에 적합*/
+
+        @keyframes boxAnimation2 {
+            10% {
+                width: 50px;
+            }
+            50% {
+                width: 500px;
+            }
+            100% {
+                width: 200px;
+            }
+        }/**/
+    </style>
+</head>
+<body>
+    <div class="box">linear:일정하게</div>
+    <div class="box">ease:느리게-빠르게</div>
+    <div class="box">ease-in: 빠르게-느리게</div>
+    <div class="box">ease-out: 느리게-빠르게</div>
+    <div class="box">ease-in-out: 느리게-빠르게-느리게</div>
+    <div class="box">자신만의 값을 정의</div>
+</body>
+</html>
