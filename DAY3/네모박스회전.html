@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네모박스회전</title>
+    <style>
+        /*.box {
+            width: 100px;
+            height: 100px;
+            border-radius: 8px;
+            background-color: rgb(64, 186, 182);
+            position: absolute;
+            padding: 30px;
+            animation-name: moveBox;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes moveBox {
+            0% {left: 0;
+            top: 0;}
+            25% {left: 300px;
+            top: 0;}
+            50% {left: 300px;
+            top: 300px;}
+            75% {left: 0;
+            top: 300px;}
+            100% {left: 0;
+            top: 0;}
+            
+        }내가 한 것*/
+        .box {
+            width: 100px;
+            height: 100px;
+            background: rgb(243, 146, 243);
+            border-radius: 24px;
+            animation: box_rotate 5s infinite;
+
+        }
+
+        @keyframes box_rotate {
+            20% {
+                transform: translateX(200px);
+            }
+            50% {
+                transform: translate(200px, 200px);/*x값 유지하면서 아래y축으로 200만큼*/
+            }
+            80% {
+                transform: translate(0px, 200px)
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+    </div>
+</body>
+</html>
