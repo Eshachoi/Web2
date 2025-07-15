@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>에그드랍 실습</title>
+    <style>
+        
+        .image_container {
+            position: relative;
+            margin-left: 0;
+            padding-left: 0;
+            width: 1158px;
+            /*animation-name: moveBox;
+            animation-duration: 7s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            animation-timing-function: linear;
+            animation-direction: normal;*/
+           
+
+        }
+ 
+        div .logo_img {
+            position: absolute;
+            top: 90px;
+            left: 100px;
+            z-index: 2;
+        }
+
+        div .bg_img {
+            position: absolute;
+            top: 150px;
+            left: 0;
+            z-index: 1;
+            
+        }
+        
+        article {
+            margin-left: 1230px;
+            transform: translateY(650px);         
+        }
+        
+        @keyframes moveBackgroundImage {
+            from {
+                background-position: -1158px;
+            }
+            to {
+                background-position: 0 0;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    
+    
+        <div class="image_container">
+            <img src="h_eat.png" alt="Egg Makes Better 글자이미지" class="logo_img">
+            <img src="img_better.jpg" alt="샌드위치가 차려식 식탁 이미지" class="bg_img">
+        </div>
+    
+    <article>  
+         <div class="text">
+            <h2>일상의 수준을 높이다</h2>
+            <p>현대인에게 필요한 비타민, 철분,
+            <br>
+            아미노산 등의 풍부한 영양소가 함유된
+            <br>
+            프리미엄 무항생제 계란만 엄격하게
+            <br>
+            사용한 맛있는 스크램블 에그로 건강한
+            <br>
+            한 끼를 요리합니다.
+            <br>
+            <br>
+            우리에게 익숙한 샌드위치에서 신선한
+            <br>
+            재료와 감각적인 모양으로 한 단계
+            <br>
+            업그레이드 된 계란 샌드위치라는
+            <br>
+            카테고리를 새롭게 창조하였습니다.</p>
+        
+        </div>
+    </article>
+</body>
+</html>
