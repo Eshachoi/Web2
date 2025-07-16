@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/26136d9ff7.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 50px;
+            background-color: aqua;
+            color: #FFF;
+        }
+
+        ul {
+
+            display: flex;
+            list-style: none;
+            gap: 32px;
+        }
+        button {
+            background: none;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        .btn_box button:hover i {
+            animation-name: plus_to_cross;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes plus_to_cross {
+            from {
+                transform: rotate(0dec);
+            }
+            to {
+                transform: rotate(-225deg)
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>LOGO</h1>
+            <ul>
+                <li>메뉴1</li>
+                <li>메뉴2</li>
+                <li>메뉴3</li>
+                <li>메뉴4</li>
+            </ul>
+        
+        <div class="btn_box">
+            <button>
+                <i class="fa-solid fa-plus fa-2xl"></i>
+            </button>
+        </div>
+    </header>
+</body>
+</html>
