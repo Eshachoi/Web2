@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reste.css">
+    <link rel="stylesheet" href="common.css">
+    <style>
+        
+        :root {
+    --_bg_color: blue;
+    --_f_color: #skyblue;
+        }
+
+        
+            
+            
+        button {
+           margin: 50px auto;
+           display: block;
+           padding: 16px 24px;
+           font-size: 24px;
+           border: none;
+           background-color: #8adbcc;
+           color: #fff;
+           border-radius: 10px;
+           cursor: pointer;
+           box-shadow:  5px 10px 10px #999;
+        }
+
+       
+
+        ul {
+            width: 1200px;
+            overflow: hidden;
+            margin: 0;
+            display: flex;
+        }
+
+        li {
+            min-width: 268px;
+            height: 150px;
+            margin: 0 16px;
+            list-style: none;
+        }
+        
+        button:focus + ul li {
+            /*+형제 선택자 선택한다는 표시가 플러스표시*/
+            animation-name: slide;
+            animation-duration: 5s;
+            animation-timing-function: cubic-bezier(0.074, -0.17, 0.04, 1.27);
+            animation-fill-mode: forwards;
+        }
+
+         li:nth-child(1) {
+            background: url(강아지.jpeg);
+            background-size: cover;
+        }
+         li:nth-child(2) {
+            background: url(캣.jpeg) no-repeat center center;
+            background-size: cover;
+        }
+         li:nth-child(3) {
+            background: url(다람쥐.jpg) ;
+            background-size: cover;
+        }
+         li:nth-child(4) {
+            background: url(너구리.jpg) no-repeat center center;
+            background-size: cover;
+        }
+         li:nth-child(5) {
+            background: url(원숭이.webp) no-repeat center center;
+            background-size: cover;
+        }
+         li:nth-child(6) {
+            background: url(쥐.jpg) no-repeat center center;
+            background-size: cover;
+        }
+         li:nth-child(7) {
+            background: url(치타.jpeg) no-repeat center center;
+            background-size: cover;
+        }
+         li:nth-child(8) {
+            background: url(토끼.webp) no-repeat center center;
+            background-size: cover;
+        }
+        button {
+            border: none;
+        }
+        @keyframes slide {
+           
+            20% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-1200px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <button>
+            동물이 지나가요
+        </button>
+        <ul>
+            <li>
+                <img src="강아지.jpeg" alt="">
+            </li>
+            <li>
+                <img src="캣.jpeg" alt="">
+            </li>
+            <li>
+                <img src="다람쥐.jpg" alt="">
+            </li>
+            <li>
+                <img src="너구리.jpg" alt="">
+            </li>
+            <li>
+                <img src="원숭이.webp" alt="">
+            </li>
+            <li>
+                <img src="쥐.jpg" alt="">
+            </li>
+            <li>
+                <img src="치타.jpeg" alt="">
+            </li>
+            <li>
+                <img src="토끼.webp" alt="">
+            </li>
+            
+        </ul>
+
+    </section>
+</body>
+</html>

@@ -1,0 +1,25 @@
+.d_flex {
+    display: flex;
+}
+
+.bt {
+    display: flex;
+    justify-content: center;
+}
+
+.ac {
+    displey: flex;
+    align-items: center;
+}
+
+.tc {
+    text-align: center;
+}
+
+:root {
+    --com1_bg_color: blue;
+    --com1_f_color: #fff;
+    --com2_bg_color: #fff;
+    --com2_f_color: black;
+    /*작업시 미리 전체 화면세 백그라운드 컬러와 글자색을 설정해줍니다. 회사1,2, 구분 등*/
+}
