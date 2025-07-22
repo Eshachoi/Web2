@@ -80,7 +80,7 @@ header {
     background-size: 540px auto;
 }
 
-.main_text_box h2 {
+.main_text_box >h2 {
     font-size: 48px;
     font-weight: 400;
     margin-bottom: 16px;
@@ -145,7 +145,7 @@ header {
     gap: 16px;
 }
 
-.bg_img_container h2 {
+.bg_img_container > h2 {
     font-size: 42px;
 }
 .bg_img_container p {
@@ -157,7 +157,7 @@ header {
 
 /*about container 시작*/
 .bg_img_container {
-    margin-top: var(--section-margin-top);
+    margin: var(--section-margin-top);
     display: flex;
     justify-content: center;
 }
@@ -165,7 +165,6 @@ header {
 .about_container ul {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     width: 1000px;
     list-style: none;
     margin-left: 450px;
@@ -177,26 +176,26 @@ header {
     background-size: cover;
 }
 .list_img_1 {
-    background: url(img_seo01.jpg);
-    
-}
-.list_img_2 {
-    background: url(img_seo02.jpg);
-    
-}
-.list_img_3 {
-    background: url(img_seo03.jpg);
-    
+    background: url(img_seo01.jpg);  
 }
 
-.about_list h2 {
+.list_img_2 {
+    background: url(img_seo02.jpg);    
+}
+
+.list_img_3 {
+    background: url(img_seo03.jpg);    
+}
+
+.about_list > h2 {
     font-size: 24px;
-    margin: 16px 0;
+    margin: 16px 0 0 40px;
 }
 
 .about_list p {
     font-size: 14px;
     line-height: 20px;
+    margin: 16px 0 0 40px;
 }
 /*about recommend 끝*/
 
@@ -213,19 +212,31 @@ header {
 
 .recommend_text {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    gap: 20px;
+    height: 200px;
     margin-bottom: 50px;
 }
 .recommend_text h2 {
     font-size: 24px;
+}
+.recommend_text a  {
+    font-size: 16px;
+}
+.recommend_text h2,
+.recommend_text a {
+    flex-shrink: 0;
+    white-space: nowrap;
 }
 
 .recommend_ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
 }
 
 .recommend_list {
@@ -236,7 +247,7 @@ header {
 }
 
 .recommend_list > figure {
-    background: url();
+    background: url(squarrel.jpeg);
     width: 93px;
     height: 93px;
     background-size: cover;
@@ -280,12 +291,13 @@ header {
     align-items: center;
 }
 
-.downlad_left > figure {
+.download_left {
     display: flex;
+    width: 100%;
     align-items: center;
     gap: 16px;
 }
-.downlad_left > div > h1 {
+.download_left > div > h2 {
     font-size: 24px;
     margin-bottom: 8px;
 }
@@ -303,9 +315,11 @@ footer {
 footer ul {
     display: flex;
     font-size: 14px;
-    width: 1000px;
+    width: 100%;
     flex-direction: wrap;
-    margin: 0 auto;
+    flex-direction: row;
+    padding-left: 180px;
+    list-style: none;
     gap: 8px;
 }
 
@@ -315,7 +329,7 @@ footer ul a {
 }
 
 footer p {
-    olor: #7f7f7f;
+    color: #7f7f7f;
     width: 100px;
     margin: 32px auto 0 auto;
 }
