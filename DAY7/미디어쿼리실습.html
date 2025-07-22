@@ -5,36 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>미디어쿼리실습</title>
     <style>
-        .pc_media {
-            width: 1450px;
+        .pink_box,
+        .purple_box,
+        .sky_box,
+        .yellow_box {
+            width: 100%;
             height: 300px;
-            background-color: hotpink;
-        }
-        .less_1280 {
-            width: 50%;
-            height: 300px;
-            background-color: blueviolet;
+            background-color: #fff;
+            font-size: large;
+            display: none;
         }
 
-        @media (max-width:1280px){
-            .max_media {
-                width:100%
+    
+
+        @media (min-width:1280px) {
+            .pink_box {
+                background-color: pink;
+                display:flex;
+                color: #000;
             }
         }
-        @media (max-width:760px){
-            .less_1280 {
-                width: 50%;
+        @media (min-width:761px) and (max-width:1279px){
+            .purple_box {
+                background-color: purple;
+                display:flex;
             }
         }
-        body {
-            padding: 0 32px;
+        @media (min-width:360px) and (max-width:760px){
+            .sky_box {
+                background-color: skyblue;
+                display:flex;
+            }
+        }
+        @media (max-width:359px) {
+            .yellow_box {
+                background-color: yellow;
+                display:flex;
+            }
         }
     </style>
 </head>
 <body>
-   <div class="max_media">저는 브라우저의 크기 100%를 차지하고 브라우저가 1280보다 작아지면 사라져요</div>
-   <div class="less_1280">저는 브라우저의 크기가 760보다 크고 1280px 보다 작을때만 나타나요</div>
-   <div class="less">저는 브라우저의 크기가 760px 이하일때 나타나고 브라우저가 360px보다 작아지면 다시 사라져요</div>
-   <div class="min_media">저는 브라우저의 크기가 360px 이하일 때 나타나요</div>
+   <div class="pink_box">저는 브라우저의 크기 100%를 차지하고 브라우저가 1280보다 작아지면 사라져요</div>
+   <div class="purple_box">저는 브라우저의 크기가 760보다 크고 1280px 보다 작을때만 나타나요</div>
+   <div class="sky_box">저는 브라우저의 크기가 760px 이하일때 나타나고 브라우저가 360px보다 작아지면 다시 사라져요</div>
+   <div class="yellow_box">저는 브라우저의 크기가 360px 이하일 때 나타나요</div>
 </body>
 </html>
