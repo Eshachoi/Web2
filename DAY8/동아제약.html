@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동아제약 반응형헤더</title>
+    <script src="https://kit.fontawesome.com/26136d9ff7.js" crossorigin="anonymous"></script>
+    <style>
+        /*pc 헤더*/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background: url(dabio1.jpg);
+            background-size: cover;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;  
+        }
+
+        a {
+            text-decoration: none;
+            color-scheme: #000;
+            padding: 4px 8px;
+        }
+        .pc_top_content {
+            justify-content: flex-end;
+            font-size: 12px;
+            gap: 8px;
+            border-bottom: 1px solid#000;
+            padding: 8px 0;
+        }
+        
+        .pc_bottom_content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 24px;
+            border-bottom: 1px solid#000;
+        }
+        .logo {
+            width: 145px;
+            height: 26px;
+        }
+
+        .bottom_right_wrapper {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+    </style>
+</head>
+<body>
+       <header>
+            <div class="pc_header">
+                
+                    <ul class="pc_top_content">
+                        <li>
+                            <a href="#"></a>준법경영</li>
+                        <li>
+                            <a href="#"></a>판매약국찾기</li>
+                        <li>
+                            <a href="#"></a>감사제보하기</li>
+                    </ul>
+                
+                <div class="pc_bottom_content">
+                    <h1 class="logo"></h1>
+                    <nav> 
+                        <ul>
+                            <li>
+                                <a href="#">회사소개</a>
+                            </li>
+                            <li>
+                                <a href="#">브랜드</a>
+                            </li>
+                            <li>
+                                <a href="#">R&D</a>
+                            </li>
+                            <li>
+                                <a href="#">정도경영</a>
+                            </li>
+                            <li>
+                                <a href="#">뉴스룸</a>
+                            </li>
+                            <li>
+                                <a href="#">인재채용</a>
+                            </li>
+                            <li>
+                                <a href="#">고객지원</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="bottom_right_wrapper">
+                        <div class="search_box">
+                            <input type="text" placeholder="검색어 입력">
+                            <!--검색아이콤 넣을거임-->
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div>
+                            <!--아이콘넣을거-->
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <div>
+                            <!--아이콘넣을거-->
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mo_header">
+                <h2></h2>
+                <div class="mo_right_wrapper">
+                    <div>
+                            <!--아이콘넣을거-->
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div>
+                            <!--아이콘넣을거-->
+                            <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        
+    </header>
+</body>
+</html>
