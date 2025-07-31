@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./reset.css">
+    <script src="https://kit.fontawesome.com/26136d9ff7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header_left">
+            <button class="header_menu">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false"
+                    aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+                    <path d="M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z"></path>
+                </svg>
+            </button>
+            <h1 class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" id="yt-ringo2-red-svg_yt18" class="external-icon" width="101" height="20" viewBox="0 0 101 20" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+                    <g>
+                      <path d="M14.4848 20C14.4848 20 23.5695 20 25.8229 19.4C27.0917 19.06 28.0459 18.08 28.3808 16.87C29 14.65 29 9.98 29 9.98C29 9.98 29 5.34 28.3808 3.14C28.0459 1.9 27.0917 0.94 25.8229 0.61C23.5695 0 14.4848 0 14.4848 0C14.4848 0 5.42037 0 3.17711 0.61C1.9286 0.94 0.954148 1.9 0.59888 3.14C0 5.34 0 9.98 0 9.98C0 9.98 0 14.65 0.59888 16.87C0.954148 18.08 1.9286 19.06 3.17711 19.4C5.42037 20 14.4848 20 14.4848 20Z" fill="#FF0033"></path>
+                      <path d="M19 10L11.5 5.75V14.25L19 10Z" fill="white"></path>
+                    </g>
+                    <g id="youtube-paths_yt18">
+                      <path d="M32.1819 2.10016V18.9002H34.7619V12.9102H35.4519C38.8019 12.9102 40.5619 11.1102 40.5619 7.57016V6.88016C40.5619 3.31016 39.0019 2.10016 35.7219 2.10016H32.1819ZM37.8619 7.63016C37.8619 10.0002 37.1419 11.0802 35.4019 11.0802H34.7619V3.95016H35.4519C37.4219 3.95016 37.8619 4.76016 37.8619 7.13016V7.63016Z"></path>
+                      <path d="M41.982 18.9002H44.532V10.0902C44.952 9.37016 45.992 9.05016 47.302 9.32016L47.462 6.33016C47.292 6.31016 47.142 6.29016 47.002 6.29016C45.802 6.29016 44.832 7.20016 44.342 8.86016H44.162L43.952 6.54016H41.982V18.9002Z"></path>
+                      <path d="M55.7461 11.5002C55.7461 8.52016 55.4461 6.31016 52.0161 6.31016C48.7861 6.31016 48.0661 8.46016 48.0661 11.6202V13.7902C48.0661 16.8702 48.7261 19.1102 51.9361 19.1102C54.4761 19.1102 55.7861 17.8402 55.6361 15.3802L53.3861 15.2602C53.3561 16.7802 53.0061 17.4002 51.9961 17.4002C50.7261 17.4002 50.6661 16.1902 50.6661 14.3902V13.5502H55.7461V11.5002ZM51.9561 7.97016C53.1761 7.97016 53.2661 9.12016 53.2661 11.0702V12.0802H50.6661V11.0702C50.6661 9.14016 50.7461 7.97016 51.9561 7.97016Z"></path>
+                      <path d="M60.1945 18.9002V8.92016C60.5745 8.39016 61.1945 8.07016 61.7945 8.07016C62.5645 8.07016 62.8445 8.61016 62.8445 9.69016V18.9002H65.5045L65.4845 8.93016C65.8545 8.37016 66.4845 8.04016 67.1045 8.04016C67.7745 8.04016 68.1445 8.61016 68.1445 9.69016V18.9002H70.8045V9.49016C70.8045 7.28016 70.0145 6.27016 68.3445 6.27016C67.1845 6.27016 66.1945 6.69016 65.2845 7.67016C64.9045 6.76016 64.1545 6.27016 63.0845 6.27016C61.8745 6.27016 60.7345 6.79016 59.9345 7.76016H59.7845L59.5945 6.54016H57.5445V18.9002H60.1945Z"></path>
+                      <path d="M74.0858 4.97016C74.9858 4.97016 75.4058 4.67016 75.4058 3.43016C75.4058 2.27016 74.9558 1.91016 74.0858 1.91016C73.2058 1.91016 72.7758 2.23016 72.7758 3.43016C72.7758 4.67016 73.1858 4.97016 74.0858 4.97016ZM72.8658 18.9002H75.3958V6.54016H72.8658V18.9002Z"></path>
+                      <path d="M79.9516 19.0902C81.4116 19.0902 82.3216 18.4802 83.0716 17.3802H83.1816L83.2916 18.9002H85.2816V6.54016H82.6416V16.4702C82.3616 16.9602 81.7116 17.3202 81.1016 17.3202C80.3316 17.3202 80.0916 16.7102 80.0916 15.6902V6.54016H77.4616V15.8102C77.4616 17.8202 78.0416 19.0902 79.9516 19.0902Z"></path>
+                      <path d="M90.0031 18.9002V8.92016C90.3831 8.39016 91.0031 8.07016 91.6031 8.07016C92.3731 8.07016 92.6531 8.61016 92.6531 9.69016V18.9002H95.3131L95.2931 8.93016C95.6631 8.37016 96.2931 8.04016 96.9131 8.04016C97.5831 8.04016 97.9531 8.61016 97.9531 9.69016V18.9002H100.613V9.49016C100.613 7.28016 99.8231 6.27016 98.1531 6.27016C96.9931 6.27016 96.0031 6.69016 95.0931 7.67016C94.7131 6.76016 93.9631 6.27016 92.8931 6.27016C91.6831 6.27016 90.5431 6.79016 89.7431 7.76016H89.5931L89.4031 6.54016H87.3531V18.9002H90.0031Z"></path>
+                    </g>
+                </svg>
+            </h1>
+        </div>
+
+            <div class="header_center">
+                <!--<div class="search_box">-->
+                    <input type="text" placeholder="검색">
+                    <button class="search_icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="24" viewBox="0 0 24 24"
+                        width="24" focusable="false" aria-hidden="true"
+                        style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+                        <path clip-rule="evenodd"
+                            d="M16.296 16.996a8 8 0 11.707-.708l3.909 3.91-.707.707-3.909-3.909zM18 11a7 7 0 00-14 0 7 7 0 1014 0z"
+                            fill-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                <button class="voice_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false"
+                    aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+                    <path
+                        d="M12 3c-1.66 0-3 1.37-3 3.07v5.86c0 1.7 1.34 3.07 3 3.07s3-1.37 3-3.07V6.07C15 4.37 13.66 3 12 3zm6.5 9h-1c0 3.03-2.47 5.5-5.5 5.5S6.5 15.03 6.5 12h-1c0 3.24 2.39 5.93 5.5 6.41V21h2v-2.59c3.11-.48 5.5-3.17 5.5-6.41z">
+                    </path>
+                </svg>
+                </button>
+            </div>
+
+            <div class="header_right">
+                <div class="making">
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24"
+                        viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true"
+                        style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+                        <path d="M20 12h-8v8h-1v-8H3v-1h8V3h1v8h8v1z"></path>
+                        </svg>
+                    </button>
+                    <span>만들기</span>
+                </div>
+                <button class="bell">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="24" viewBox="0 0 24 24" width="24"
+                    focusable="false" aria-hidden="true"
+                    style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+                    <path clip-rule="evenodd"
+                        d="m13.497 4.898.053.8.694.4C15.596 6.878 16.5 8.334 16.5 10v2.892c0 .997.27 1.975.784 2.83L18.35 17.5H5.649l1.067-1.778c.513-.855.784-1.833.784-2.83V10c0-1.666.904-3.122 2.256-3.902l.694-.4.053-.8c.052-.78.703-1.398 1.497-1.398.794 0 1.445.618 1.497 1.398ZM6 10c0-2.224 1.21-4.165 3.007-5.201C9.11 3.236 10.41 2 12 2c1.59 0 2.89 1.236 2.993 2.799C16.79 5.835 18 7.776 18 10v2.892c0 .725.197 1.436.57 2.058l1.521 2.535c.4.667-.08 1.515-.857 1.515H15c0 .796-.316 1.559-.879 2.121-.562.563-1.325.879-2.121.879s-1.559-.316-2.121-.879C9.316 20.56 9 19.796 9 19H4.766c-.777 0-1.257-.848-.857-1.515L5.43 14.95c.373-.622.57-1.333.57-2.058V10Zm4.5 9c0 .398.158.78.44 1.06.28.282.662.44 1.06.44s.78-.158 1.06-.44c.282-.28.44-.662.44-1.06h-3Z"
+                        fill-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <button class="profile_img">
+                    <img src="/unnamed.jpg" alt="">
+                </button>
+            </div>
+    </header>
+
+    <div class="all_Section">
+        <main class="main_left">
+            <section class="video_container">
+                <div class="main_video">
+                    <iframe width="1799" height="1012" src="https://www.youtube.com/embed/uw-K4zcxWoI?list=RDuw-K4zcxWoI" 
+                    title="30 Most Beautiful Adagios - Rachmaninoff, Mozart, Bach..." frameborder="0" allow="accelerometer; 
+                    autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <article class="video_info_box">
+                    <h2>
+                        30 Most Beautiful Adagios - Rachmaninoff, Mozart, Bach...
+                    </h2>
+                        
+                    <div class="info_wrapper">
+                        <div>
+                            <div class="channel_box">
+                                <figure></figure>
+                                <div class="channel_name">
+                                    <h2>Essential Classics</h2>
+                                    <p>구독자 30.9만명</p>
+                                </div>
+                                <button>구독</button>
+                            </div>
+                            <div class="view_box">
+                                    <div></div>
+                                    <div class="like_box">
+                                        <button></button>
+                                        <span></span>
+                                    </div>
+                                    <div>
+                                        <button></button>
+                                    </div>
+                                    
+                                </div>
+                                <div class="share">
+                                        <button></button>
+                                        <span>공유</span>
+                                    </div>
+                                <div class="save">
+                                    <button></button>
+                                    <span>오프라인 저장</span>
+                                </div>
+                                <div class="clip">
+                                    <button></button>
+                                    <span>클립</span>
+                                </div>
+                                <div class="more">
+                                    <button></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="video_description">
+                            <h3>
+                                조회수 248,993회 2025.5.16
+                            </h3>
+                            <p>Sometimes, the slowest moments carry the deepest emotions.
+                                <br>
+                                This collection of adagios brings together the most tender, moving, and soul-stirring pieces in classical music. 
+                                <br>
+                                With every note stretched in time, these compositions allow space to feel — to remember, to reflect, to breathe.
+                            </p>
+                    </div>
+                </article>
+            </section>
+
+            <section class="comment_container">
+                <div class="comment_count">
+                    <h2>댓글 53개</h2>
+                    <div class="comment_align">
+                        <button></button>
+                        <span>정렬 기준</span>
+                    </div>
+                </div>
+
+                <div class="add_comment">
+                    <figure></figure>
+                    <div class="input_box">
+                        <input type="text"
+                        placeholder="댓글추가...">
+                    </div>
+                </div>
+
+                <div class="comment_content">
+                    <figure></figure>
+                    <div class="user_comment">
+                        <h2>
+                            @AI-rtysta
+                            <span>2개월 전</span>
+                        </h2>
+                        <p>
+                            Classical music has this extraordinary power that, regardless of the era, it continues to delight and move.
+                        </p>
+                        <div class="comment_icons">
+                            <div class="like">
+                                <button></button>
+                                <span>23</span>
+                            </div>
+                            <div class="hate">
+                                <button></button>
+                            </div>
+                            <figure></figure>
+                            <div class="reply">
+                                <button></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="more">
+                        <button></button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <aside class="recommend_video">
+            
+            <ul class="video_filter">
+                <li>모두</li>
+                <li>시리즈</li>
+                <li>관련콘텐츠</li>
+                <li>추천</li>
+            </ul>
+    
+            <article class="side_video_box">
+                <ul class="side_videos">
+                    <li>
+                        <a href="#">
+                            <img src="" alt="">
+                        </a>
+                        <div class="side_video_text">
+                            <h2>
+                                뇌를 진정시키는 클래식 음악
+                            </h2>
+                            <p>HAIDONMUSIC</p>
+                            <div class="view_text">
+                                <span>조회수 99만회</span>
+                                <span>·</span>
+                                <span>5개월 전</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </article>
+            
+        </aside>
+    </div>
+</body>
+</html>
